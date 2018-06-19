@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "tewi:size=12";
+static char *font = "tewi:size=14:antialias=true";
 static int borderpx = 2;
 
 /*
