@@ -9,7 +9,18 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "tewi:size=12" };
 static const char dmenufont[]       = "tewi:size=12";
 
-#include "/home/daosyn/.cache/wal/colors-wal-dwm.h"
+static const char norm_fg[] = "#f5efc7";
+static const char norm_bg[] = "#0E0E0D";
+static const char norm_border[] = "#aba78b";
+
+static const char sel_fg[] = "#f5efc7";
+static const char sel_bg[] = "#0E0E0D";
+static const char sel_border[] = "#f5efc7";
+
+static const char *colors[][3] = {
+    [SchemeNorm] = { norm_fg,     norm_bg,   norm_border },
+    [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },
+};
 
 /* tagging */
 static const char *tags[] = { "I", "II", "III", "IV" };
@@ -27,7 +38,7 @@ static const Rule rules[] = {
 /* layout(s) */
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
-static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
+static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */

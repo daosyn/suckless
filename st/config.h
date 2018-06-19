@@ -82,9 +82,40 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-#include "/home/daosyn/.cache/wal/colors-wal-st.h"
+const char *colorname[] = {
+  /* 8 normal colors */
+  [0] = "#0E0E0D", /* black   */
+  [1] = "#4A4A48", /* red     */
+  [2] = "#6E5C48", /* green   */
+  [3] = "#976824", /* yellow  */
+  [4] = "#947048", /* blue    */
+  [5] = "#D6B04D", /* magenta */
+  [6] = "#DDB985", /* cyan    */
+  [7] = "#f5efc7", /* white   */
 
-unsigned int defaultrcs = 256;
+  /* 8 bright colors */
+  [8]  = "#aba78b",  /* black   */
+  [9]  = "#4A4A48",  /* red     */
+  [10] = "#6E5C48", /* green   */
+  [11] = "#976824", /* yellow  */
+  [12] = "#947048", /* blue    */
+  [13] = "#D6B04D", /* magenta */
+  [14] = "#DDB985", /* cyan    */
+  [15] = "#f5efc7", /* white   */
+
+  /* special colors */
+  [256] = "#0E0E0D", /* background */
+  [257] = "#f5efc7", /* foreground */
+  [258] = "#f5efc7",     /* cursor */
+};
+
+/* Default colors (colorname index)
+ * foreground, background, cursor */
+unsigned int defaultbg = 256;
+unsigned int defaultfg = 257;
+unsigned int defaultcs = 258;
+
+unsigned int defaultrcs = 258;
 
 /*
  * Default shape of cursor
