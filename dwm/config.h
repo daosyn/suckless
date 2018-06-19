@@ -6,8 +6,8 @@ static const unsigned int gappx     = 20;       /* gap pixel between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "tewi:size=14" };
-static const char dmenufont[]       = "tewi:size=14";
+static const char *fonts[]          = { "tewi:size=12" };
+static const char dmenufont[]       = "tewi:size=12";
 
 static const char norm_fg[] = "#f5efc7";
 static const char norm_bg[] = "#0E0E0D";
