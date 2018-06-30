@@ -23,7 +23,7 @@ static const char *colors[][3] = {
 };
 
 /* tagging */
-static const char *tags[] = { "I", "II", "III", "IV" };
+static const char *tags[] = { "term |", "web |", "dev |", "other |" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -41,10 +41,10 @@ static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 
 static const Layout layouts[] = {
-	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+	/* symbol | arrange function */
+	{ "[]=", tile },    /* first entry is default */
+	{ "><>", NULL },    /* no layout function means floating behavior */
+	{ "[M]=", monocle },
 };
 
 /* key definitions */
