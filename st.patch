@@ -1,0 +1,87 @@
+--- config.def.h	2018-03-31 15:14:20.188541121 -0500
++++ config.h	2018-06-19 00:38:04.615907909 -0500
+@@ -5,7 +5,7 @@
+  *
+  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+  */
+-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
++static char *font = "tewi:size=12:antialias=true";
+ static int borderpx = 2;
+ 
+ /*
+@@ -82,44 +82,40 @@
+  */
+ unsigned int tabspaces = 8;
+ 
+-/* Terminal colors (16 first used in escape sequence) */
+-static const char *colorname[] = {
+-	/* 8 normal colors */
+-	"black",
+-	"red3",
+-	"green3",
+-	"yellow3",
+-	"blue2",
+-	"magenta3",
+-	"cyan3",
+-	"gray90",
+-
+-	/* 8 bright colors */
+-	"gray50",
+-	"red",
+-	"green",
+-	"yellow",
+-	"#5c5cff",
+-	"magenta",
+-	"cyan",
+-	"white",
+-
+-	[255] = 0,
+-
+-	/* more colors can be added after 255 to use with DefaultXX */
+-	"#cccccc",
+-	"#555555",
++const char *colorname[] = {
++  /* 8 normal colors */
++  [0] = "#0E0E0D", /* black   */
++  [1] = "#4A4A48", /* red     */
++  [2] = "#6E5C48", /* green   */
++  [3] = "#976824", /* yellow  */
++  [4] = "#947048", /* blue    */
++  [5] = "#D6B04D", /* magenta */
++  [6] = "#DDB985", /* cyan    */
++  [7] = "#f5efc7", /* white   */
++
++  /* 8 bright colors */
++  [8]  = "#aba78b",  /* black   */
++  [9]  = "#4A4A48",  /* red     */
++  [10] = "#6E5C48", /* green   */
++  [11] = "#976824", /* yellow  */
++  [12] = "#947048", /* blue    */
++  [13] = "#D6B04D", /* magenta */
++  [14] = "#DDB985", /* cyan    */
++  [15] = "#f5efc7", /* white   */
++
++  /* special colors */
++  [256] = "#0E0E0D", /* background */
++  [257] = "#f5efc7", /* foreground */
++  [258] = "#f5efc7",     /* cursor */
+ };
+ 
++/* Default colors (colorname index)
++ * foreground, background, cursor */
++unsigned int defaultbg = 256;
++unsigned int defaultfg = 257;
++unsigned int defaultcs = 258;
+ 
+-/*
+- * Default colors (colorname index)
+- * foreground, background, cursor, reverse cursor
+- */
+-unsigned int defaultfg = 7;
+-unsigned int defaultbg = 0;
+-static unsigned int defaultcs = 256;
+-static unsigned int defaultrcs = 257;
++unsigned int defaultrcs = 258;
+ 
+ /*
+  * Default shape of cursor
