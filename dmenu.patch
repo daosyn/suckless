@@ -1,5 +1,5 @@
---- config.def.h	2018-03-31 16:36:25.565427025 -0500
-+++ config.h	2018-06-19 00:39:30.041741779 -0500
+--- src/dmenu/config.def.h	2018-03-31 16:36:25.565427025 -0500
++++ src/dmenu/config.h	2018-06-19 00:39:30.041741779 -0500
 @@ -1,17 +1,17 @@
  /* See LICENSE file for copyright and license details. */
  /* Default settings; can be overriden by command line. */

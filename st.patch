@@ -1,11 +1,11 @@
---- config.def.h	2018-03-31 15:14:20.188541121 -0500
-+++ config.h	2018-06-19 00:38:04.615907909 -0500
+--- src/st/config.def.h	2018-03-31 15:14:20.188541121 -0500
++++ src/st/config.h	2018-08-13 22:32:51.191036646 -0500
 @@ -5,7 +5,7 @@
   *
   * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
   */
 -static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-+static char *font = "tewi:size=12:antialias=true";
++static char *font = "tewi:antialias=true";
  static int borderpx = 2;
  
  /*
