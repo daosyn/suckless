@@ -4,6 +4,3 @@
 [submodule "src/st"]
 	path = src/st
 	url = git://git.suckless.org/st
-[submodule "src/dmenu"]
-	path = src/dmenu
-	url = git://git.suckless.org/dmenu
