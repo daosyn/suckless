@@ -1,3 +1,0 @@
-#!/bin/bash
-
-diff -u src/$1/config.def.h src/$1/config.h > $1.patch
