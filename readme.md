@@ -1,4 +1,23 @@
-personal patches for [suckless](https://suckless.org)
+# suckless
 
-execute `./gen [dwm | st | dmenu]` to generate new patch files
-(assumes projects are in `src`, e.g. `src/dwm`)
+personal patches for [suckless tools](https://suckless.org), specifically `dwm` and `st`
+
+## installation
+
+clone repository
+
+```shell
+git clone --recurse-submodules https://github.com/daosyn/suckless.git
+```
+
+install both `dwm` and `st`
+
+```shell
+make all
+```
+
+clean up `dwm` and `st` directories
+
+```shell
+make clean
+```
